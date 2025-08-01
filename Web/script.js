@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnConfirmNo = document.getElementById("btn-confirm-no");
     let tarefaIdParaExcluir = null;
 
-    const API_URL = "http://localhost:5000/tarefas/";
+    const API_URL = "https://tarefas-y4yp.onrender.com/tarefas/";
 
     function showLoader() {
         loader.style.display = "block";
