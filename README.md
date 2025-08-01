@@ -53,15 +53,33 @@ O sistema foi desenvolvido seguindo uma arquitetura em camadas, visando organiza
 
 ## Tecnologias Utilizadas
 
-- Python 3.11 
+- Python 3.11  
 - Flask  
 - SQLAlchemy (opcional, se usado) ou outro ORM / biblioteca para DB  
 - HTML5  
 - CSS3  
-- JavaScript 
+- JavaScript  
 - Banco de dados relacional (PostgreSQL)
 
+---
 
 ## Convenções de Código
 
-- Os métodos e funções no backend foram escritos seguindo a convenção **snake_case**, que é padrão no Python.  
+- Os métodos e funções no backend foram escritos seguindo a convenção **snake_case**, que é padrão no Python.
+
+---
+
+## Deploy
+
+- O **frontend** está hospedado na plataforma gratuita **Vercel**.  
+- O **backend** está hospedado na plataforma gratuita **Render**.
+
+**Observação:** Por serem planos gratuitos, as aplicações podem ficar hibernando quando não utilizadas.  
+Por isso, na primeira vez que acessar, pode demorar um pouco para o sistema responder enquanto ele "acorda" do modo hibernação.
+
+---
+
+## Contato
+
+Desenvolvido por Bernardo.  
+GitHub: https://github.com/JoaoBeernardoo/Tarefas
