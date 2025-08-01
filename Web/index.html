@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <table id="tarefasTable">
+      <thead>
+        <tr>
+          <th>Nome da Tarefa</th>
+          <th>Custo (R$)</th>
+          <th>Data Limite</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tarefas-container">
+      </tbody>
+    </table>
+    <button id="btnAdicionar">Incluir Nova Tarefa</button>
+  </div>
+
+  <div id="loader" style="display:none; position:fixed; top:50%; left:50%; transform: translate(-50%, -50%); z-index:11000;">
+    <div class="spinner"></div>
+  </div>
+  
+  
+  <div id="message-box" style="display:none; position:fixed; top:20px; right:20px; background:#333; color:#fff; padding:15px; border-radius:5px; z-index:11000;">
+    <span id="message-text"></span>
+    <button id="close-message" style="margin-left:10px; background:none; border:none; color:#fff; font-weight:bold; cursor:pointer;">×</button>
+  </div>
+
+  <div id="modal-confirm" class="modalConfirma" style="display:none; z-index:12000;">
+    <div class="modal-contentConfirma" style="max-width:400px; padding:20px; text-align:center;">
+      <p>Tem certeza que deseja excluir esta tarefa?</p>
+      <button id="btn-confirm-yes" class="btn btn-danger" style="margin-right:10px;">Sim</button>
+      <button id="btn-confirm-no" class="btn btn-secondary">Não</button>
+    </div>
+  </div>
+
+  <div id="modal-tarefa" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="fechar">&times;</span>
+      <h2 id="modal-title">Adicionar Tarefa</h2>
+      <form id="form-tarefa">
+        <input type="hidden" id="tarefa-id" />
+        <label>Nome da Tarefa:</label>
+        <input type="text" id="nome" required />
+
+        <label>Custo (R$):</label>
+        <input type="number" id="custo" step="0.01" required />
+
+        <label>Data Limite:</label>
+        <input type="date" id="data" required />
+
+        <button type="submit" id="salvarTarefa">Salvar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
