@@ -53,7 +53,7 @@ O sistema foi desenvolvido seguindo uma arquitetura em camadas, visando organiza
 
 ## Tecnologias Utilizadas
 
-- Python 3.x  
+- Python 3.11 
 - Flask  
 - SQLAlchemy (opcional, se usado) ou outro ORM / biblioteca para DB  
 - HTML5  
